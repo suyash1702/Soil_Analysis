@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analysis Result - AgriWaterHub</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='result.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <div class="logo-container">
+                    <a href="{{ url_for('index') }}">
+                        <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo" class="navbar-logo">
+                    </a>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="{{ url_for('index') }}">Home</a></li>
+                    <li><a href="{{ url_for('soil_analysis') }}">Soil Analysis</a></li>
+                    <li><a href="{{ url_for('information') }}">Information</a></li>
+                    <li><a href="{{ url_for('references') }}">References</a></li>
+                    <li><a href="{{ url_for('about') }}">About</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h2>Analysis Result</h2>
+            {% if message is string %}
+                <p class="error-message">{{ message }}</p>
+            {% else %}
+                <table class="result-table">
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Value</th>
+                    </tr>
+                    <tr>
+                        <td>Crop Name</td>
+                        <td>{{ message['Crop Name'] }}</td>
+                    </tr>
+                    <tr>
+                        <td>Soil Type</td>
+                        <td>{{ message['Soil Type'] }}</td>
+                    </tr>
+                    <tr>
+                        <td>Growth Phase</td>
+                        <td>{{ message['Growth Phase'] }}</td>
+                    </tr>
+                    <tr>
+                        <td>Actual Soil Moisture</td>
+                        <td>{{ message['Actual Soil Moisture'] }}</td>
+                    </tr>
+                    <tr>
+                        <td>Required Moisture</td>
+                        <td>{{ message['Required Moisture'] }}</td>
+                    </tr>
+                    <tr>
+                        <td>Irrigation Needed</td>
+                        <td>{{ message['Irrigation Needed'] }}</td>
+                    </tr>
+                    <tr>
+                        <td>Irrigation Amount (mm)</td>
+                        <td>{{ message['Irrigation Amount (mm)'] }}</td>
+                    </tr>
+                </table>
+            {% endif %}
+        </main>
+        <footer>
+            <p>&copy; 2024 AgriWaterHub</p>
+        </footer>
+    </div>
+</body>
+</html>

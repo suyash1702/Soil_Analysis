@@ -1,0 +1,3 @@
+Latitude,Longitude,Soil_Moisture,Required_irrigation
+30.123,"-97.123,0.2",0.25,Yes
+31.456,-98.456,0.5,No

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - AgriWaterHub</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='about.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <div class="logo-container">
+                    <a href="{{ url_for('index') }}">
+                        <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo" class="navbar-logo">
+                    </a>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="{{ url_for('index') }}">Home</a></li>
+                    <li><a href="{{ url_for('soil_analysis') }}">Soil Analysis</a></li>       
+                    <li><a href="{{ url_for('information') }}">Information</a></li>
+                    <li><a href="{{ url_for('references') }}">References</a></li>
+                    <li><a href="{{ url_for('about') }}">About</a></li>
+                </ul>
+            </nav>
+        </header>
+      
+            <div class="team-container">
+                <!-- Team Member 1 -->
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="./static/nav.jpg" alt="Navnath Jadhav" class="profile-img">
+                            <div class="name">Navnath Jadhav</div>
+                            <div class="role">Team Leader, ML & AI Expert</div>
+                            <div class="info">Studying B.E Computer Engineering (final year).</div>
+                            <a class="read-more" onclick="toggleDetails(this)">Read More</a>
+                        </div>
+                        <div class="card-back">
+                            <div class="more-info">
+                                <p>Navnath Jadhav is the team leader and an expert in machine learning and artificial intelligence. He is currently in his final year of B.E Computer Engineering and is proficient in Java and various frameworks. His leadership and technical skills helped drive the idea of AquaYield Optimizer, making significant contributions to the project.</p>
+                            </div>
+                            <a class="read-less" onclick="toggleDetails(this)">Read Less</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Team Member 2 -->
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="./static/me.jpg" alt="Suyash Mungase" class="profile-img">
+                            <div class="name">Suyash Mungase</div>
+                            <div class="role">Data Exploration & Frontend</div>
+                            <div class="info">B.E Computer Engineering (final year).</div>
+                            <a class="read-more" onclick="toggleDetails(this)">Read More >></a>
+                        </div>
+                        <div class="card-back">
+                            <div class="more-info">
+                                <p>Suyash Mungase, a final year B.E Computer Engineering student, is highly skilled in data exploration, Flask, Angular, and Python. In the AquaYield Optimizer project, he focused on decision-making and data analysis using NASA's SMAP satellite data.</p>
+                            </div>
+                            <a class="read-less" onclick="toggleDetails(this)">Read Less >></a>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Team Member 3 -->
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="./static/dan.png" alt="Danish Shaikh" class="profile-img">
+                            <div class="name">Danish Shaikh</div>
+                            <div class="role">Frontend & Database Developer</div>
+                            <div class="info">Studying B.E Information Technology (final year).</div>
+                            <a class="read-more" onclick="toggleDetails(this)">Read More >></a>
+                        </div>
+                        <div class="card-back">
+                            <div class="more-info">
+                                <p>Danish Shaikh, in his final year of B.E IT, is skilled in frontend development using technologies such as React, HTML, JavaScript, and Express. He developed the user interface and managed the database integration for the AquaYield Optimizer.</p>
+                            </div>
+                            <a class="read-less" onclick="toggleDetails(this)">Read Less >></a>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Team Member 4 -->
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="./static/shubham.jpg" alt="Shubham Thombal" class="profile-img">
+                            <div class="name">Shubham Thombal</div>
+                            <div class="role">Presentation & Embedded Systems</div>
+                            <div class="info">Pursuing B.E Electronics & Computer Engineering.</div>
+                            <a class="read-more" onclick="toggleDetails(this)">Read More >></a>
+                        </div>
+                        <div class="card-back">
+                            <div class="more-info">
+                                <p>Shubham Thombal is pursuing B.E Electronics & Computer Engineering. He is proficient in embedded systems and hardware, and he showcased excellent presentation skills, representing the project in various platforms and explaining its use cases effectively.</p>
+                            </div>
+                            <a class="read-less" onclick="toggleDetails(this)">Read Less >></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <script>function toggleDetails(element) {
+              const card = element.closest('.card');
+              const cardInner = card.querySelector('.card-inner');
+          
+              if (cardInner.style.transform === "rotateY(180deg)") {
+                  cardInner.style.transform = ""; // Flip back
+              } else {
+                  cardInner.style.transform = "rotateY(180deg)"; // Flip front
+              }
+          }
+          </script>
+       
+        
+        <footer>
+            <p>&copy; 2024 AgriWaterHub</p>
+        </footer>
+    </div>
+</body>
+</html>

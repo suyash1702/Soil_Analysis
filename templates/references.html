@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>References - Crop Yield Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='references.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <div class="logo-container">
+                    <a href="{{ url_for('index') }}">
+                        <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo" class="navbar-logo">
+                    </a>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="{{ url_for('index') }}">Home</a></li>
+                    <li><a href="{{ url_for('soil_analysis') }}">Soil Analysis</a></li>
+                    <li><a href="{{ url_for('information') }}">Information</a></li>
+                    <li><a href="{{ url_for('references') }}">References</a></li>
+                    <li><a href="{{ url_for('about') }}">About</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <h1>References</h1>
+            <div class="reference-container">
+                <div class="reference-card">
+                    <h2>Crop Data</h2>
+                    <p>Google Drive Folder: Crop Soil Irrigation Data</p>
+                    <a href="https://drive.google.com/drive/folders/1BkhYlFRN2aHc_BD9Fr03DLepj3AA6V1l" target="_blank">Access Data</a>
+                </div>
+                <div class="reference-card">
+                    <h2>Soil Moisture Study</h2>
+                    <p>Impact of Soil Moisture on Crop Yields in Major Rainfed Growing Regions of Peninsular India</p>
+                    <a href="https://www.researchgate.net/publication/353087392_Impact_of_Soil_Moisture_on_Crop_Yields_in_Major_Rainfed_Growing_Regions_of_Peninsular_India" target="_blank">Read Study</a>
+                </div>
+                <div class="reference-card">
+                    <h2>Yield Study</h2>
+                    <p>Impact of Soil Moisture Data Characteristics on the Sensitivity to Crop Yields Under Drought and Excess Moisture Conditions</p>
+                    <a href="https://www.mdpi.com/2072-4292/11/4/372" target="_blank">View Article</a>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2023 Crop Yield Prediction. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+Crop Name,Soil Type,Moisture Holding Capacity (mm),Growth Phase,Duration of Phase (days),Required Irrigation (mm/day),Optimal Soil Moisture Content (cm³/cm³)
+Wheat,Loamy,200,Germination,10,4.0,0.6
+Wheat,Loamy,200,Vegetative,60,6.0,0.6
+Wheat,Loamy,200,Reproductive,40,5.0,0.6
+Wheat,Loamy,200,Maturity,20,3.0,0.5
+Wheat,Clayey,250,Germination,10,3.5,0.65
+Wheat,Clayey,250,Vegetative,60,5.0,0.65
+Wheat,Clayey,250,Reproductive,40,4.0,0.65
+Wheat,Clayey,250,Maturity,20,2.5,0.6
+Wheat,Sandy Loam,100,Germination,10,5.0,0.55
+Wheat,Sandy Loam,100,Vegetative,60,7.0,0.55
+Wheat,Sandy Loam,100,Reproductive,40,6.0,0.5
+Wheat,Sandy Loam,100,Maturity,20,4.0,0.5
+Rice,Clayey,250,Germination,15,7.0,0.7
+Rice,Clayey,250,Vegetative,80,8.0,0.7
+Rice,Clayey,250,Reproductive,50,7.0,0.7
+Rice,Clayey,250,Maturity,20,6.0,0.65
+Rice,Sandy Loam,100,Germination,15,9.0,0.6
+Rice,Sandy Loam,100,Vegetative,80,10.0,0.6
+Rice,Sandy Loam,100,Reproductive,50,8.0,0.6
+Rice,Sandy Loam,100,Maturity,20,7.0,0.55
+Maize,Loamy,200,Germination,7,5.0,0.6
+Maize,Loamy,200,Vegetative,40,6.0,0.6
+Maize,Loamy,200,Reproductive,30,5.0,0.6
+Maize,Loamy,200,Maturity,15,4.0,0.55
+Maize,Sandy Loam,100,Germination,7,7.0,0.55
+Maize,Sandy Loam,100,Vegetative,40,9.0,0.55
+Maize,Sandy Loam,100,Reproductive,30,8.0,0.5
+Maize,Sandy Loam,100,Maturity,15,6.0,0.5
+Soybean,Silty Loam,150,Germination,7,5.0,0.6
+Soybean,Silty Loam,150,Vegetative,55,6.0,0.6
+Soybean,Silty Loam,150,Reproductive,40,5.0,0.6
+Soybean,Silty Loam,150,Maturity,20,4.0,0.55
+Cotton,Loamy,200,Germination,8,5.5,0.6
+Cotton,Loamy,200,Vegetative,60,6.5,0.6
+Cotton,Loamy,200,Reproductive,50,5.5,0.6
+Cotton,Loamy,200,Maturity,20,4.0,0.55
+Cotton,Sandy Loam,100,Germination,8,6.0,0.55
+Cotton,Sandy Loam,100,Vegetative,60,7.0,0.55
+Cotton,Sandy Loam,100,Reproductive,50,6.0,0.5
+Cotton,Sandy Loam,100,Maturity,20,5.0,0.5
+Sugarcane,Clayey Loam,250,Germination,30,8.0,0.7
+Sugarcane,Clayey Loam,250,Vegetative,270,10.0,0.7
+Sugarcane,Clayey Loam,250,Reproductive,150,9.0,0.7
+Sugarcane,Clayey Loam,250,Maturity,100,7.0,0.65
+Groundnut,Loamy Sand,80,Germination,10,8.0,0.5
+Groundnut,Loamy Sand,80,Vegetative,40,7.0,0.5
+Groundnut,Loamy Sand,80,Reproductive,30,6.0,0.5
+Groundnut,Loamy Sand,80,Maturity,20,5.0,0.45
+Tomato,Sandy Loam,100,Germination,5,7.0,0.6
+Tomato,Sandy Loam,100,Vegetative,25,8.0,0.6
+Tomato,Sandy Loam,100,Reproductive,40,7.0,0.6
+Tomato,Sandy Loam,100,Maturity,20,6.0,0.55

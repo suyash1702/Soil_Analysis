@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soil Analysis - AgriWaterHub</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='form.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <div class="logo-container">
+                    <a href="{{ url_for('index') }}">
+                        <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo" class="navbar-logo">
+                    </a>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="{{ url_for('index') }}">Home</a></li>
+                    <li><a href="{{ url_for('soil_analysis') }}">Soil Analysis</a></li>
+                    <li><a href="{{ url_for('information') }}">Information</a></li>
+                    <li><a href="{{ url_for('references') }}">References</a></li>
+                    <li><a href="{{ url_for('about') }}">About</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="form-container">
+                <h2 class="form-title">Soil Analysis Form</h2>
+                <form action="/analyze" method="POST">
+                    <div class="form-group">
+                        <label for="crop_name">Crop Name:</label>
+                        <select id="crop_name" name="crop_name" required>
+                            <option value="" disabled selected>Select Crop Name</option>
+                            <option value="Wheat">Wheat</option>
+                            <option value="Rice">Rice</option>
+                            <option value="Maize">Maize</option>
+                            <option value="Soybean">Soybean</option>
+                            <option value="Cotton">Cotton</option>
+                            <option value="Sugarcane">Sugarcane</option>
+                            <option value="Groundnut">Groundnut</option>
+                            <option value="Tomato">Tomato</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="soil_type">Soil Type:</label>
+                        <select id="soil_type" name="soil_type" required>
+                            <option value="" disabled selected>Select Soil Type</option>
+                            <option value="Loamy">Loamy</option>
+                            <option value="Clayey">Clayey</option>
+                            <option value="Sandy Loam">Sandy Loam</option>
+                            <option value="Silty Loam">Silty Loam</option>
+                            <option value="Loamy Sand">Loamy Sand</option>
+                            <option value="Clayey Loam">Clayey Loam</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="latitude">Latitude:</label>
+                        <input type="text" id="latitude" name="latitude" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="longitude">Longitude:</label>
+                        <input type="text" id="longitude" name="longitude" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="crop_age">Crop Age (in days):</label>
+                        <input type="number" id="crop_age" name="crop_age" min="1" max="365" required>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Analyze</button>
+                </form>
+            </div>
+        </main>
+        <footer>
+            <p>&copy; 2024 AgriWaterHub</p>
+        </footer>
+    </div>
+</body>
+</html>
